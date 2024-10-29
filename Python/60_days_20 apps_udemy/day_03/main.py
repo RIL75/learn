@@ -7,9 +7,11 @@ while True:
         case 'add':
             todo = input("Enter a todo: ")
             todos.append(todo)
-        case 'show':
+        case 'show' | 'display':
             for item in todos:
                 print(item)
         case 'exit':
             break
+        case _:
+            print("Hey, you entered an unknown command")
 print("Bye!")
