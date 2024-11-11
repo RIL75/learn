@@ -7,6 +7,7 @@ while True:
         #todo = input("Enter a todo: ") + "\n"
         with open('todos.txt', 'r') as file:
              todos = file.readlines()
+
         todos.append(todo)
         with open('todos.txt', 'w') as file:
             file.writelines(todos)
@@ -15,6 +16,7 @@ while True:
         with open('todos.txt', 'r') as file:
             todos = file.readlines()
         # new_todos = [item.strip('\n') for item in todos]
+        
         for index, item in enumerate(todos):
             item = item.strip('\n')
             row = f"{index+1}-{item}"
