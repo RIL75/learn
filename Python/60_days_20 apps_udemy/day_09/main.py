@@ -16,7 +16,7 @@ while True:
         with open('todos.txt', 'r') as file:
             todos = file.readlines()
         # new_todos = [item.strip('\n') for item in todos]
-        
+
         for index, item in enumerate(todos):
             item = item.strip('\n')
             row = f"{index+1}-{item}"
