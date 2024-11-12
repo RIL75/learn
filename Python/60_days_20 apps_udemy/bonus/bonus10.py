@@ -4,7 +4,6 @@ try:
 
     if wight == length:
         exit("That looks like a square.")
-        
     area = wight *length
     print(area)
 except ValueError:
