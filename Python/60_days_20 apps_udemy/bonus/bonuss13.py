@@ -20,3 +20,19 @@ if result < 1:
     print("Kid is too small.")
 else:
     print("Kid can user the slide.")
+
+
+
+
+'''
+def get_nr_items(user_input):
+    words = user_input.split(',')
+    
+    return len(words)
+
+print(get_nr_items("john,lisa, teresa"))
+
+
+
+
+'''
