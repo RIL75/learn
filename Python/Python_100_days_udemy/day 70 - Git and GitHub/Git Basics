@@ -1,0 +1,57 @@
+# Initialize a new Git repository
+git init
+
+# CLone an existing repository
+git  clone <repository-url>
+
+# Check teh status of your working directory
+git status
+
+# Add files to the staging area
+git add <file>
+
+# Add all changes in the working directory to the staging area
+git add.
+
+# Commit changes in the staging area with a message
+git commit -m "Commit message"
+
+# View commit history
+git log
+
+# Show changes between commits, commit and workking tree, etc.
+git diff
+
+# Create a new branch
+git branch <branch-name>
+
+# Switch to a different branch
+git checkout <branch-name>
+
+# Create and switch to a new branch
+git chekout -b <branch-name>
+
+# Merge a branch into the current branch
+git merge <branch-name>
+
+# Push changes to a remote repository
+git pull
+
+# Set up a new remote repository
+git remote add origin <repository-url>
+
+# List all configured remote repositorie
+git remote -v
+
+# Remote a file from the staging area
+git reset <file>
+
+# Unstage everything (kepp changes)
+git reset
+
+# Revert changes in a filr to the last committed state
+git chekcout -- <file>
+
+# Delete a branch
+git branch -d <branch-name>
+
