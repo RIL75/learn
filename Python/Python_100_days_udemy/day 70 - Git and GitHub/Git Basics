@@ -23,10 +23,10 @@ git commit -m "Commit message"
 # View commit history
 git log
 
-# Show changes between commits, commit and workking tree, etc.
+# Show changes between commits, commit and working tree, etc.
 git diff
 
-# Lists all locla branhes
+# Lists all local branches
 git branch
 
 # Create a new branch
@@ -39,14 +39,13 @@ git branch -m <new-branch-name>
 git checkout <branch-name>
 
 # Create and switch to a new branch
-git chekout -b <branch-name>
+git checkout -b <branch-name>
 
 # Merge a branch into the current branch
 git merge <branch-name>
 
 # Delete a branch
 git branch -d <branch-name>
-
 
 # Set up a new remote repository
 git remote add origin <repository-url>
@@ -60,17 +59,17 @@ git fetch <remote-repository>
 # Push local branch to remote repository
 git push <remote-repository><branch>
 
-# List all configured remote repositorie
+# List all configured remote repositories
 git remote -v
 
 # Remote a file from the staging area
 git reset <file>
 
-# Unstage everything (kepp changes)
+# Unstage everything (keep changes)
 git reset
 
-# Revert changes in a filr to the last committed state
-git chekcout -- <file>
+# Revert changes in a file to the last committed state
+git checkout -- <file>
 
 # Delete a branch
 git branch -d <branch-name>
@@ -78,5 +77,5 @@ git branch -d <branch-name>
 # Remove a file from the index and working directory
 git rm <file>
 
-# Temporarily remove uncomitted changes and save them for later use
+# Temporarily remove uncommitted changes and save them for later use
 git stash
