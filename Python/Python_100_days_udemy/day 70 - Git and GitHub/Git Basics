@@ -1,8 +1,12 @@
 # Initialize a new Git repository
 git init
 
+# Set configuration values for you username and email
+git config --global user.name <your-name>
+git config --global user.email <your-email>
+
 # CLone an existing repository
-git  clone <repository-url>
+git clone <repository-url>
 
 # Check teh status of your working directory
 git status
@@ -22,8 +26,14 @@ git log
 # Show changes between commits, commit and workking tree, etc.
 git diff
 
+# Lists all locla branhes
+git branch
+
 # Create a new branch
 git branch <branch-name>
+
+# Rename the current branches
+git branch -m <new-branch-name>
 
 # Switch to a different branch
 git checkout <branch-name>
@@ -34,11 +44,21 @@ git chekout -b <branch-name>
 # Merge a branch into the current branch
 git merge <branch-name>
 
-# Push changes to a remote repository
-git pull
+# Delete a branch
+git branch -d <branch-name>
+
 
 # Set up a new remote repository
 git remote add origin <repository-url>
+
+# Fetch remote changes and merge into local repository
+git pull <remote-repository>
+
+# Fetch remote changes and merge into local repository
+git fetch <remote-repository>
+
+# Push local branch to remote repository
+git push <remote-repository><branch>
 
 # List all configured remote repositorie
 git remote -v
@@ -55,3 +75,8 @@ git chekcout -- <file>
 # Delete a branch
 git branch -d <branch-name>
 
+# Remove a file from the index and working directory
+git rm <file>
+
+# Temporarily remove uncomitted changes and save them for later use
+git stash
